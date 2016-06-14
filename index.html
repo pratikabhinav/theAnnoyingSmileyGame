@@ -1,5 +1,6 @@
 <html>
   <head>
+    <title>Find the extra face</title>
     <style>
       img {
         position:absolute
@@ -19,13 +20,11 @@
     </style>
   </head>
   <body onload="generateFaces(); writeHighScore()">
-    <h1>Matching Game</h1>
+    <h1>High Score: <span id="high"></span> || Name: <span id="highScoreName"></span></h1>
     <h3>Click <em>only</em> on the extra smiling face on the left.</h3>
     <p>If you are using a mobile device, use landscape mode for best experience. <br>You have played this game <span id="count"></span> time(s).</p>
     <div id="leftSide"></div>
     <div id="rightSide"></div>
-    <h2>High Score: <span id="high"></span></h2>
-    <h2>Name: <span id="highScoreName"></span></h2>
     <script type="text/javascript" src="aScriptHasNoName.js"></script>
   </body>
 </html>
