@@ -1,8 +1,11 @@
   var numberOfFaces = 3;
-      var score = 0;
-      var theLeftSide = document.getElementById("leftSide");
-      var theRightSide = document.getElementById("rightSide");
-      var theBody = document.getElementsByTagName("body")[0];
+  var noName = "Tyrion";
+  var tempName = prompt("Please enter your name: ");
+  var highScore = 0;
+  var score = 0;
+  var theLeftSide = document.getElementById("leftSide");
+  var theRightSide = document.getElementById("rightSide");
+  var theBody = document.getElementsByTagName("body")[0];
 
       function generateFaces() {
         for (var i = 0; i < numberOfFaces; i++) {
@@ -33,5 +36,14 @@
             alert("Oops! You touched/clicked on the wrong face! Game Over!" + "\nYour score is : " + score);
             theBody.onclick = null;
             theLeftSide.lastChild.onclick = null;
+            checkHighScore();
           };
+      }
+      function checkHighScore(){
+      	if (score>=highScore){
+      		noName=tempName;
+      		highScore=score;
+      	}
+      	document.getElementById("high").innerHTML = highScore;
+      	document.getElementById("highScoreName").innerHTML = noName;
       }
