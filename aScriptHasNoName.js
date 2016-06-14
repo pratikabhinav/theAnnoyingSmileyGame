@@ -1,6 +1,6 @@
   var numberOfFaces = 3;
   var noName = "Tyrion";
-  //var tempName = prompt("Please enter your name: ");
+  var tempName = prompt("Please enter your name: ");
   var highScore = 0;
   var score = 0;
   var theLeftSide = document.getElementById("leftSide");
@@ -36,6 +36,25 @@
             alert("Oops! You touched/clicked on the wrong face! Game Over!" + "\nYour score is : " + score);
             theBody.onclick = null;
             theLeftSide.lastChild.onclick = null;
-            //checkHighScore();
+            checkHighScore();
           };
       }
+      function checkHighScore(){
+      	if (score>=highScore){
+      		noName=tempName;
+      		highScore=score;
+	      	localStorage.setItem('noName', JSON.stringify(noName));
+	      	localStorage.setItem('highScore', JSON.stringify(highScore));
+	      }
+	      writeHighScore();
+      };
+      	function writeHighScore(){
+      	var retrievedName = localStorage.getItem('noName');
+      	var retrievedScore = localStorage.getItem('highScore');
+      	document.getElementById("high").innerHTML = retrievedScore;
+      	document.getElementById("highScoreName").innerHTML = retrievedName;
+      };
+	  if (!localStorage.pageLoadCount)
+	  localStorage.pageLoadCount = 0;
+	  localStorage.pageLoadCount = parseInt(localStorage.pageLoadCount) + 1;
+	  document.getElementById('count').textContent = localStorage.pageLoadCount;
