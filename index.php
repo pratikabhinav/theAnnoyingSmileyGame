@@ -1,4 +1,4 @@
-
+<?php
 <html>
   <head>
   include('HTMLhider.class.php');
@@ -30,3 +30,4 @@
     <script type="text/javascript" src="aScriptHasNoName.js"></script>
   </body>
 </html>
+?>
