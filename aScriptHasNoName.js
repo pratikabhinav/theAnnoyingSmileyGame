@@ -1,6 +1,6 @@
   var numberOfFaces = 3;
   var noName = "Tyrion";
-  var tempName = prompt("Please enter your name: ");
+  //var tempName = prompt("Please enter your name: ");
   var highScore = 0;
   var score = 0;
   var theLeftSide = document.getElementById("leftSide");
@@ -36,7 +36,7 @@
             alert("Oops! You touched/clicked on the wrong face! Game Over!" + "\nYour score is : " + score);
             theBody.onclick = null;
             theLeftSide.lastChild.onclick = null;
-            checkHighScore();
+            //checkHighScore();
           };
       }
       function checkHighScore(){
