@@ -44,6 +44,6 @@
       		noName=tempName;
       		highScore=score;
       	}
-      	document.getElementById("high").innerHTML = highScore;
-      	document.getElementById("highScoreName").innerHTML = noName;
+      	//document.getElementById("high").innerHTML = highScore;
+      	//document.getElementById("highScoreName").innerHTML = noName;
       }
