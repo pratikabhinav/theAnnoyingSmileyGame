@@ -39,11 +39,3 @@
             //checkHighScore();
           };
       }
-      function checkHighScore(){
-      	if (score>=highScore){
-      		noName=tempName;
-      		highScore=score;
-      	}
-      	//document.getElementById("high").innerHTML = highScore;
-      	//document.getElementById("highScoreName").innerHTML = noName;
-      }
