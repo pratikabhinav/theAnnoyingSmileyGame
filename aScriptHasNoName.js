@@ -40,7 +40,8 @@
           };
       }
       function checkHighScore(){
-      	if (score>=highScore){
+      	var retrievedScore = localStorage.getItem('highScore');
+      	if (score>=retrievedScore){
       		noName=tempName;
       		highScore=score;
 	      	localStorage.setItem('noName', JSON.stringify(noName));
