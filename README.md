@@ -1,4 +1,2 @@
 # pratikabhinav.github.io
-"That's what I do. I drink, and I know things"
-<br>
-Hosting a simple game made with HTML, CSS and Javascript.
+A "find the extra smiley face" game created using HTML, DOM and Javascript, as part of HTML, CSS and JavaScript course offered by The Hong Kong University of Science and Technology.
